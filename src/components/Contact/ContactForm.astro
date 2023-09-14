@@ -1,0 +1,38 @@
+---
+    import Form from "./Form.astro";
+---
+
+<div class="max-w-md mx-auto">
+	<form class="space-y-4">
+		<Form
+			label="Nombre"
+			type="text"
+			id="nombre"
+			name="nombre"s
+			required="true"
+		/>
+		<Form
+			label="Tu Correo Electrónico"
+			type="email"
+			id="correo"
+			name="correo"
+			required="true"
+		/>
+		<Form
+			label="Mensaje"
+			type="textarea"
+			id="mensaje"
+			name="mensaje"
+			rows="5"
+			required="true"
+		/>
+		<div>
+			<button
+				type="submit"
+				class="bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out"
+			>
+				Enviar Mensaje
+			</button>
+		</div>
+	</form>
+</div>

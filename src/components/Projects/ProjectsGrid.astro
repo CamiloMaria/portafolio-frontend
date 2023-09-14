@@ -1,0 +1,21 @@
+---
+import ProjectCard from "./ProjectsCard.astro";
+---
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+	<ProjectCard
+		imageSrc=""
+		title="Portafolio Personal"
+		description="Un portafolio personal desarrollado en Astro, que permite mostrar información personal, proyectos, habilidades y experiencias laborales."
+	/>
+	<ProjectCard
+		imageSrc="imagen_proyecto_1.jpg"
+		title="Employee Record (Frontend)"
+		description="Una aplicación desarrollada en Angular para la empresa de Plaza Lama, que permite buscar empleados por diferentes criterios, gestionar administradores y realizar operaciones de creación, edición y eliminación de empleados y administradores."
+	/>
+	<ProjectCard
+		imageSrc="imagen_proyecto_2.jpg"
+		title="Employee Record (Backend)"
+		description="Un proyecto basado en NestJS para la empresa de Plaza Lama, que implementa una aplicación de Búsqueda de Empleados."
+	/>
+</div>

@@ -1,0 +1,41 @@
+---
+import SkillCategory from "./SkillCategory.astro";
+---
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+	<SkillCategory
+		title="Desarrollo Frontend"
+		skills={["HTML5, CSS3, JavaScript", "React, Angular, Astro, Tailwind CSS"]}
+	/>
+	<SkillCategory
+		title="Desarrollo Backend"
+		skills={[
+			"C#, ASP.NET MVC, ASP.NET Core, Entity Framework",
+			"Node.js, Express.js, Nest.js",
+			"Base de datos: SQL, MongoDB",
+			"Servicios: REST, Docker, Azure",
+			"Python, PHP",
+		]}
+	/>
+	<SkillCategory
+		title="Desarrollo Móvil (Practicante)"
+		skills={["React Native", "Flutter"]}
+	/>
+	<SkillCategory
+		title="Herramientas y Otros"
+		skills={[
+			"Git, GitHub, GitLab",
+			"Jira, Trello, Azure DevOps",
+			"Pruebas unitarias y E2E",
+			"Framework de pruebas: Jest",
+			"Desarrollo ágil (Scrum, Kanban)",
+			"Metodologías de desarrollo (TDD, BDD)",
+			"Clean Code Architecture",
+			"Linux, Windows",
+		]}
+	/>
+	<SkillCategory
+		title="Idiomas"
+		skills={["Inglés: Intermedio Alto (B3)", "Español: Nativo"]}
+	/>
+</div>

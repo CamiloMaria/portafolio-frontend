@@ -1,0 +1,9 @@
+---
+const props = Astro.props;
+---
+<div class="bg-gray-100 rounded-lg shadow-md p-6">
+	<h3 class="text-xl font-semibold mb-2">{props.title}</h3>
+	<ul class="list-disc list-inside text-gray-600">
+		{props.skills.map((skill: string[]) => <li>{skill}</li>)}
+	</ul>
+</div>

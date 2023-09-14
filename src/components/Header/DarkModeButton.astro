@@ -1,0 +1,64 @@
+
+
+<div x-data="{ darkMode: false }">
+	<label class="cursor-pointer">
+		<input type="checkbox" x-model="darkMode" class="hidden" />
+		<span
+			class="relative inline-block h-6 w-11 bg-gray-400 rounded-full shadow-inner transition duration-300 ease-in-out"
+		>
+			<span
+				class="absolute inset-0 h-full w-full bg-white rounded-full shadow-md transform translate-x-0 transition duration-300 ease-in-out"
+				:class="{ 'translate-x-5': darkMode }"></span>
+		</span>
+		<span
+			class="block ml-2 text-white font-semibold"
+			x-text="darkMode ? 'Modo Oscuro' : 'Modo Claro'"></span>
+	</label>
+	<style>
+		/* Aplicar estilos de modo oscuro */
+		:root {
+			--bg-color: #ffffff;
+			--text-color: #333333;
+		}
+
+		[x-data] [x-show] {
+			display: none !important;
+		}
+
+		[x-data] [x-show].true {
+			display: inherit !important;
+		}
+
+		[x-cloak] {
+			display: none !important;
+		}
+
+		[x-cloak].block {
+			display: block !important;
+		}
+
+		[x-cloak].inline {
+			display: inline !important;
+		}
+
+		[x-cloak].inline-block {
+			display: inline-block !important;
+		}
+
+		[x-cloak].hidden {
+			display: none !important;
+		}
+
+		[x-cloak].flex {
+			display: flex !important;
+		}
+
+		[x-cloak].grid {
+			display: grid !important;
+		}
+
+		[x-cloak].table {
+			display: table !important;
+		}
+	</style>
+</div>
